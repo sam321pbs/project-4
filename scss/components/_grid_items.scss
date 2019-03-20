@@ -1,0 +1,50 @@
+.grid__col--3 {
+  @include center-item;
+}
+
+.grid__col--12 {
+  @include desktop('desktop') {
+    justify-content: space-around;
+  }
+}
+
+.centered {
+  @include center-item;
+}
+
+@for $i from 1 through 12 {
+  @if ($i == 3) {
+    .grid__row .grid__col--#{$i}.theme__colors {
+      @include grid-item($color-purple);
+    }
+  } @else if ($i == 4) {
+    .grid__row .grid__col--#{$i}.theme__colors {
+      @include grid-item($color-link);
+    }
+  } @else if ($i == 5) {
+    .grid__row .grid__col--#{$i}.theme__colors {
+      @include grid-item($color-dark-green);
+    }
+  } @else if ($i == 6) {
+    .grid__row .grid__col--#{$i}.theme__colors {
+      @include grid-item($color-dark-blue);
+    }
+  } @else if ($i == 7) {
+    .grid__row .grid__col--#{$i}.theme__colors {
+      @include grid-item($button-pink);
+    }
+  } @else if ($i == 8) {
+    .grid__row .grid__col--#{$i}.theme__colors {
+      @include grid-item($color-dark-orange);
+    }
+  } @else if ($i == 12) {
+    .grid__row .grid__col--#{$i}.theme__colors {
+      @include grid-item($color-teal);
+      @include desktop('desktop') {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  }
+}

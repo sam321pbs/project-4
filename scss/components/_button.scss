@@ -1,0 +1,25 @@
+@each $button in $buttons {
+  .btn--#{$button} {
+    @include button-default;
+    margin-bottom: 20px;
+    @include desktop('desktop') {
+      width: 160px;
+      padding-left: 15px;
+      padding-right: 15px;
+      flex-basis: auto;
+      text-align: center;
+    }
+
+    @if $button == 'default' {
+      background-color: $color-link;
+    } @else if ($button == 'success') {
+      background-color: $button-green;
+    } @else if ($button == 'error') {
+      background-color: $button-pink;
+    } @else if ($button == 'warning') {
+      background-color: $button-orange;
+    } @else if ($button == 'info') {
+      background-color: $button-purple;
+    }
+  }
+}

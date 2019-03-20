@@ -22,7 +22,10 @@ $color-purple: #dc90ec;
 $color-dark-green: #1ba72c;
 $color-dark-orange: #eb7415;
 
-$break-desktop: 768px;
+$break-desktop: "(min-width: 768px)";
+
+$font-size: 1.1em;
 
 // list
 $buttons: ('default', 'success', 'error', 'warning', 'info');
+

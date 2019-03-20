@@ -1,27 +1,2 @@
-a {
-  color: $color-shade;
-  text-decoration: none;
-}
-
-a[href="#type"] {
-  background-color: $color-primary;
-  color: white;
-}
-
-li {
-  @media (min-width: $break-desktop) {
-    display: inline-flex;
-    flex-direction: row;
-    align-content: end;
-  }
-}
-
-li a {
-  display: block;
-  padding: 15px;
-}
-
-p {
-  font-size: 1.3em;
-  line-height: 1.3em;
-}
+@import "base";
+@import "normalize.css";

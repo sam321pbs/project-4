@@ -1,0 +1,36 @@
+//@import "../utilities/variables";
+
+.container {
+  margin: 20px;
+}
+
+.card {
+  margin: 20px;
+  color: $color-shade;
+}
+
+.headline--primary {
+  color: $color-primary;
+  margin-right: 20px;
+}
+
+.headline--secondary {
+  font-size: 1.3em;
+}
+
+.link {
+  color: $color-link;
+}
+
+.blockquote {
+  font-size: 1.7em;
+  border-left-style: solid;
+  border-left-width: thick;
+  border-left-color: $color-primary;
+  padding-left: 15px;
+}
+
+.headline--secondary {
+  color: $color-shade;
+  margin-bottom: 15px;
+}

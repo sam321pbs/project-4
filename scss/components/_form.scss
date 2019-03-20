@@ -1,0 +1,25 @@
+.form {
+  margin: 20px;
+  background-color: $white;
+}
+
+.img--avatar {
+  @include center-item;
+}
+
+.form__input {
+  @include form-input;
+}
+
+.form__label--hidden {
+  @include form-hidden;
+}
+
+.img--frame {
+  @include center-item;
+  padding: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: $color-shade;
+  margin-bottom: 15px;
+}

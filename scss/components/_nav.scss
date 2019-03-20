@@ -1,0 +1,15 @@
+.nav {
+  @include desktop('desktop') {
+    justify-content: flex-end;
+  }
+}
+
+.nav__item {
+  color: $white;
+  background-color: $white;
+  text-align: center;
+  font: {
+    family: Arial;
+    size: 20px;
+  }
+}
